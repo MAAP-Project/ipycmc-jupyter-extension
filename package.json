@@ -1,5 +1,5 @@
 {
-    "name": "ipycmc",
+    "name": "ipycmc_jupyter_extension",
     "version": "0.1.0",
     "description": "A Jupyter Lab widget for the Common Mapping Client",
     "keywords": [
@@ -12,9 +12,9 @@
         "lib/**/*.js",
         "dist/**/*"
     ],
-    "homepage": "https://github.com/MAAP-Project/ipycmc",
+    "homepage": "https://github.com/MAAP-Project/ipycmc-jupyter-extension",
     "bugs": {
-        "url": "https://github.com/MAAP-Project/ipycmc/issues"
+        "url": "https://github.com/MAAP-Project/ipycmc-jupyter-extension/issues"
     },
     "license": "BSD-3-Clause",
     "author": {
@@ -25,18 +25,19 @@
     "types": "./lib/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "https://github.com/MAAP-Project/ipycmc"
+        "url": "https://github.com/MAAP-Project/ipycmc-jupyter-extension"
     },
     "scripts": {
         "build": "npm run build:lib && npm run build:nbextension && npm run build:labextension",
+        "build:prod": "jlpm clean && jlpm build:lib && jlpm build:labextension",
         "build:lib": "tsc",
         "build:nbextension": "webpack -p",
-        "build:labextension": "npm run clean:labextension && mkdirp ipycmc/labextension && cd ipycmc/labextension && npm pack ../..",
+        "build:labextension": "npm run clean:labextension && mkdirp ipycmc_jupyter_extension/labextension && cd ipycmc_jupyter_extension/labextension && npm pack ../..",
         "clean": "npm run clean:dist && npm run clean:lib && npm run clean:nbextension && npm run clean:labextension",
         "clean:dist": "rimraf dist",
         "clean:lib": "rimraf lib",
-        "clean:labextension": "rimraf ipycmc/labextension",
-        "clean:nbextension": "rimraf ipycmc/nbextension/static/*.index.* && rimraf ipycmc/nbextension/static/assets",
+        "clean:labextension": "rimraf ipyipycmc_jupyter_extensioncmc/labextension",
+        "clean:nbextension": "rimraf ipycmc_jupyter_extension/nbextension/static/*.index.* && rimraf ipycmc_jupyter_extension/nbextension/static/assets",
         "test": "npm run test:firefox",
         "test:chrome": "karma start --browsers=Chrome tests/karma.conf.js",
         "test:debug": "karma start --browsers=Chrome --singleRun=false --debug=true tests/karma.conf.js",

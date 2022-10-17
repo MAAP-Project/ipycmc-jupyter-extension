@@ -30,7 +30,7 @@ module.exports = [
     entry: "./src/extension.ts",
     output: {
       filename: "index.js",
-      path: path.resolve(__dirname, "ipycmc", "nbextension", "static"),
+      path: path.resolve(__dirname, "ipycmc_jupyter_extension", "nbextension", "static"),
       libraryTarget: "amd"
     },
     module: {
@@ -43,7 +43,7 @@ module.exports = [
   },
 
   /**
-   * Embeddable ipycmc bundle
+   * Embeddable ipycmc_jupyter_extension bundle
    *
    * This bundle is almost identical to the notebook extension bundle. The only
    * difference is in the configuration of the webpack public path for the
@@ -58,8 +58,8 @@ module.exports = [
       filename: "index.js",
       path: path.resolve(__dirname, "dist"),
       libraryTarget: "amd",
-      library: "ipycmc",
-      publicPath: "https://unpkg.com/ipycmc@" + version + "/dist/"
+      library: "ipycmc_jupyter_extension",
+      publicPath: "https://unpkg.com/ipycmc_jupyter_extension@" + version + "/dist/"
     },
     devtool: "source-map",
     module: {
@@ -80,7 +80,7 @@ module.exports = [
     output: {
       filename: "embed-bundle.js",
       path: path.resolve(__dirname, "docs", "source", "_static"),
-      library: "ipycmc",
+      library: "ipycmc_jupyter_extension",
       libraryTarget: "amd"
     },
     module: {

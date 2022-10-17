@@ -48,14 +48,14 @@ build: off
 before_test:
   - git config --global user.email appveyor@fake.com
   - git config --global user.name "AppVeyor CI"
-  - set "tmptestdir=%tmp%\ipycmc-%RANDOM%"
+  - set "tmptestdir=%tmp%\ipycmc_jupyter_extension-%RANDOM%"
   - mkdir "%tmptestdir%"
   - cd "%tmptestdir%"
 
 
 # to run your custom scripts instead of automatic tests
 test_script:
-  - 'py.test -l --cov-report xml:"%APPVEYOR_BUILD_FOLDER%\coverage.xml" --cov=ipycmc --pyargs ipycmc'
+  - 'py.test -l --cov-report xml:"%APPVEYOR_BUILD_FOLDER%\coverage.xml" --cov=ipycmc_jupyter_extension --pyargs ipycmc_jupyter_extension'
 
 on_success:
   - cd "%APPVEYOR_BUILD_FOLDER%"

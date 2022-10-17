@@ -1,4 +1,4 @@
-# ipycmc
+# Ipycmc jupyter extension
 
 [![Build Status](https://travis-ci.org/MAAP-Project/ipycmc.svg?branch=master)](https://travis-ci.org/MAAP-Project/ipycmc)
 [![codecov](https://codecov.io/gh/MAAP-Project/ipycmc/branch/master/graph/badge.svg)](https://codecov.io/gh/MAAP-Project/ipycmc)
@@ -14,7 +14,6 @@ A Jupyter Lab widget for embedding the Common Mapping Client into a Python Jupyt
 
 ### Build & Install nbextension
 ```bash
-cd maap-jupyter-ide/ipycmc 
 npm install 
 npm run build
 sudo pip install -e .

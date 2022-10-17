@@ -6,8 +6,8 @@ Developer install
 To install a developer version of ipycmc, you will first need to clone
 the repository::
 
-    git clone https://github.com/MAAP-Project/ipycmc
-    cd ipycmc
+    git clone https://github.com/MAAP-Project/ipycmc-jupyter-extension
+    cd ipycmc-jupyter-extension
 
 Next, install it with a develop install using pip::
 
@@ -17,9 +17,9 @@ Next, install it with a develop install using pip::
 If you are planning on working on the JS/frontend code, you should also do
 a link installation of the extension::
 
-    jupyter nbextension install [--sys-prefix / --user / --system] --symlink --py ipycmc
+    jupyter nbextension install [--sys-prefix / --user / --system] --symlink --py ipycmc_jupyter_extension
 
-    jupyter nbextension enable [--sys-prefix / --user / --system] --py ipycmc
+    jupyter nbextension enable [--sys-prefix / --user / --system] --py ipycmc_jupyter_extension
 
 with the `appropriate flag`_. Or, if you are using Jupyterlab::
 

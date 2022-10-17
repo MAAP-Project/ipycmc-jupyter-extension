@@ -13,7 +13,7 @@ import * as widgetExports from './widget';
 
 import { MODULE_NAME, MODULE_VERSION } from './version';
 
-const EXTENSION_ID = 'ipycmc:plugin';
+const EXTENSION_ID = 'ipycmc_jupyter_extension:plugin';
 
 /**
  * The example plugin.

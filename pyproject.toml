@@ -1,0 +1,23 @@
+[build-system]
+requires = ["jupyter_packaging~=0.10,<2", "jupyterlab~=3.1"]
+build-backend = "jupyter_packaging.build_api"
+
+[tool.jupyter-packaging.options]
+skip-if-exists = ["ipycmc_jupyter_extension/labextension/static/style.js"]
+ensured-targets = ["ipycmc_jupyter_extension/labextension/static/style.js", "ipycmc_jupyter_extension/labextension/package.json"]
+
+[tool.jupyter-packaging.builder]
+factory = "jupyter_packaging.npm_builder"
+
+[tool.jupyter-packaging.build-args]
+build_cmd = "build:prod"
+npm = ["jlpm"]
+
+[tool.check-manifest]
+ignore = ["ipycmc_jupyter_extension/labextension/**", "yarn.lock", ".*", "package-lock.json"]
+
+[project]
+name = "ipycmc-jupyter-extension"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.7"

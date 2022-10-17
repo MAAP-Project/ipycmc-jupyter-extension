@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "ipycmc_jupyter_extension/extension": true
+  }
+}

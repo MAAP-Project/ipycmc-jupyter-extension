@@ -69,7 +69,7 @@ author = 'Flynn Platt'
 import os
 here = os.path.dirname(__file__)
 repo = os.path.join(here, '..', '..')
-_version_py = os.path.join(repo, 'ipycmc', '_version.py')
+_version_py = os.path.join(repo, 'ipycmc_jupyter_extension', '_version.py')
 version_ns = {}
 with open(_version_py) as f:
     exec(f.read(), version_ns)

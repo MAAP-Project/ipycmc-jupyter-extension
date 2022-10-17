@@ -1,5 +1,5 @@
 
-ipycmc
+ipycmc_jupyter_extension
 =====================================
 
 Version: |release|
@@ -10,13 +10,13 @@ A Jupyter Lab widget for the Common Mapping Client
 Quickstart
 ----------
 
-To get started with ipycmc, install with pip::
+To get started with ipycmc_jupyter_extension, install with pip::
 
-    pip install ipycmc
+    pip install ipycmc_jupyter_extension
 
 or with conda::
 
-    conda install ipycmc
+    conda install ipycmc_jupyter_extension
 
 
 Contents
