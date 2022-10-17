@@ -1,0 +1,11 @@
+.ipynb_checkpoints/
+.idea/
+*.pyc
+*.cpython-36.pyc
+*/node_modules/*
+*/build/*
+*/lib/*
+**/*.ipynb
+*/*.egg-info/*
+*/package-lock.json
+**/*.lock
