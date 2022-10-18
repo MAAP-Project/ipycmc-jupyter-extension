@@ -8,4 +8,3 @@
 **/*.ipynb
 */*.egg-info/*
 */package-lock.json
-**/*.lock
